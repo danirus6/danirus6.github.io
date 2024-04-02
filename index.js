@@ -9,7 +9,7 @@ const { dbConnection } = require("./config/config")
 app.use(express.json())
 
 app.use(cors())
-
+console.log("ENTRADO")
 dbConnection()
 
 app.use('/empresas', require('./routes/empresas'))
